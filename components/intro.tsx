@@ -19,7 +19,7 @@ export default function Intro() {
                 transition = {{ease: "easeInOut", duration: 0.25}}> 
                   <Image src="https://media.licdn.com/dms/image/D4E03AQFpZVUVMWqQ9A/profile-displayphoto-shrink_800_800/0/1696641139700?e=1709164800&v=beta&t=p6sQkr030FQfmizO7zWBivRCbSut0uUpJfdTJbkR8Os" alt="Portrait of Ali Khachab." width="192" height="192" quality="95" priority={true} className="h-30 w-30 rounded-full object-cover shadow-xl border-[0.4rem] border-white"/>
                 </motion.div>
-                <motion.span className="text-4xl absolute bottom-0 right-0"
+                <motion.span className="text-6xl absolute bottom-0 right-0"
                 initial={{opacity: 0, scale: 0}}
                 animate={{opacity: 1, scale: 1}}
                 transition={{bounce: 0.35, duration: 0.7, delay: 0.1, type: "spring"}}>
@@ -27,25 +27,33 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.p className="mb-10 mt-4 px-4 text-3xl font-medium leading-[1.5]">
-          <span className="font-bold">If they don't nerf JP</span> I swear to God{" "}
-          <span className="font-bold">I will handle Capcom myself. </span> IDK what to put here.{" "}
-          <span className="font-bold">I need money. </span> Pokemon Company International please up your game quality. 
+        <motion.p className="mb-10 mt-4 px-4 text-3xl font-medium leading-[1.5]"
+        initial={{opacity: 0, y: 100}}
+        animate={{opacity: 1, y: 0}}
+        transition={{delay: 0.1}}>
+          <span className="font-bold">Microsoft please hire me.</span> I'm so fucking poor{" "}
+          <span className="font-bold">So many vacuums while I am on Fortnite... </span> 4090 supercomputer in my brain I promise I'm internship worthy{" "}
+          <span className="font-bold">我饿死了 </span> Where Broly in Fortnite 
       </motion.p>
-      <div className = "flex justify-center items-center">
-        <Link href="#contact" className="bg-gray-900 px-7 py-3 text-white flex items-center gap-2 rounded-full">
-          Contact me! <BsArrowRight />{" "}
+      <motion.div className = "flex justify-center items-center sm:flex-row flex-col gap-2 font-medium text-lg"
+      initial={{opacity: 0, y: 100}}
+      animate={{opacity: 1, y: 0}}>
+        <Link href="#contact" className="bg-gray-900 px-7 py-3 text-white flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+          Contact me! <BsArrowRight className="group-hover:translate-x-1 opacity-70 transform" />{" "}
         </Link>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
-          Download résumé <HiDownload />{" "} 
+
+        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+          Download résumé <HiDownload className="opacity-60 group-hover:translate-y-0.5" />{" "} 
         </a>
-        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full">
-          <BsLinkedin />{" "} 
+
+        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+          <BsLinkedin/>{" "} 
         </a>
-        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full">
+
+        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
           <BsGithub />{" "} 
         </a>
-      </div>
+      </motion.div>
     </section>
   )
 }
