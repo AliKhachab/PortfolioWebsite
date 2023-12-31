@@ -35,14 +35,14 @@ export default function Intro() {
                   </motion.span>
             </div>
         </div>
-        <motion.p className="mb-10 mt-4 px-4 text-3xl font-medium leading-[1.5]"
+        <motion.h1 className="mb-10 mt-4 px-4 text-3xl font-medium leading-[1.5]"
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
         transition={{delay: 0.1}}>
           <span className="font-bold">Microsoft please hire me.</span> I'm so fucking poor{" "}
           <span className="font-bold">So many vacuums while I am on Fortnite... </span> 4090 supercomputer in my brain I promise I'm internship worthy{" "}
           <span className="font-bold">我饿死了 </span> Where Broly in Fortnite 
-      </motion.p>
+      </motion.h1>
       <motion.div className = "flex justify-center items-center sm:flex-row flex-col gap-2 font-medium text-lg"
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}>
