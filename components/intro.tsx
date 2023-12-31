@@ -17,14 +17,22 @@ export default function Intro() {
                 initial = {{opacity: 0, scale: 0}}
                 animate = {{opacity: 1, scale: 1}}
                 transition = {{ease: "easeInOut", duration: 0.25}}> 
-                  <Image src="https://media.licdn.com/dms/image/D4E03AQFpZVUVMWqQ9A/profile-displayphoto-shrink_800_800/0/1696641139700?e=1709164800&v=beta&t=p6sQkr030FQfmizO7zWBivRCbSut0uUpJfdTJbkR8Os" alt="Portrait of Ali Khachab." width="192" height="192" quality="95" priority={true} className="h-30 w-30 rounded-full object-cover shadow-xl border-[0.4rem] border-white"/>
+                  <Image src="https://media.licdn.com/dms/image/D4E03AQFpZVUVMWqQ9A/profile-displayphoto-shrink_800_800/0/1696641139700?e=1709164800&v=beta&t=p6sQkr030FQfmizO7zWBivRCbSut0uUpJfdTJbkR8Os" alt="Portrait of Ali Khachab." width="192" height="192" quality="95" priority={true} className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                  />
                 </motion.div>
-                <motion.span className="text-6xl absolute bottom-0 right-0"
-                initial={{opacity: 0, scale: 0}}
-                animate={{opacity: 1, scale: 1}}
-                transition={{bounce: 0.35, duration: 0.7, delay: 0.1, type: "spring"}}>
-                🫡
-                </motion.span>
+                  <motion.span
+                    className="absolute bottom-0 right-0 text-4xl"
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                    type: "spring",
+                    stiffness: 125,
+                    delay: 0.1,
+                    duration: 0.7,
+                  }}
+                  >
+                    👋
+                  </motion.span>
             </div>
         </div>
         <motion.p className="mb-10 mt-4 px-4 text-3xl font-medium leading-[1.5]"
@@ -42,15 +50,15 @@ export default function Intro() {
           Contact me! <BsArrowRight className="group-hover:translate-x-1 opacity-70 transform" />{" "}
         </Link>
 
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+        <a href='/Ali_Khachab_Downloadable_Résumé.pdf' className="bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10" download>
           Download résumé <HiDownload className="opacity-60 group-hover:translate-y-0.5" />{" "} 
         </a>
 
-        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+        <a href='https://www.linkedin.com/in/ali-khachab-a70909257/' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10">
           <BsLinkedin/>{" "} 
         </a>
 
-        <a className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+        <a href='https://www.github.com/AliKhachab' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10">
           <BsGithub />{" "} 
         </a>
       </motion.div>
