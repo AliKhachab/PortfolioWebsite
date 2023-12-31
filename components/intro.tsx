@@ -54,11 +54,11 @@ export default function Intro() {
           Download résumé <HiDownload className="opacity-60 group-hover:translate-y-0.5" />{" "} 
         </a>
 
-        <a href='https://www.linkedin.com/in/ali-khachab-a70909257/' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10">
+        <a href='https://www.linkedin.com/in/ali-khachab-a70909257/' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10 text-gray-700 hover:text-gray-950" target="_blank">
           <BsLinkedin/>{" "} 
         </a>
 
-        <a href='https://www.github.com/AliKhachab' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10">
+        <a href='https://www.github.com/AliKhachab' className="bg-white p-4 items-center text-[1.35rem] flex gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer border border-black/10 text-gray-700 hover:text-gray-950" target="_blank">
           <BsGithub />{" "} 
         </a>
       </motion.div>
