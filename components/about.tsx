@@ -1,19 +1,21 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 export default function AboutMe() {
   return (
-    <section>
-      <h2 className="font-medium text-3x mb-3">
-        About me
-      </h2>
+    <motion.section className="mb-28 max-w-[45rem] text-center leading-8"
+    initial={{y:100, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{delay:0.175, type: "bounce"}}>
+      <SectionHeading>About me</SectionHeading>
       <p className = "mb-8">
-        I'm currently studying at the New York Institute of Technology for my B.S. in computer science to pursue my passion in programming. The goal is to learn and master full-stack software/web development.
+        I'm currently working towards a Bachelor's degree in <span className="font-bold">computer science</span> at NYIT to purue my passion for programming. I have many goals I want to achieve, and the first is <span className="font-bold">full-stack software development.</span> 
       </p>
       <p>
-        In my free time, I like to work out, play video games, and talk to people.
+        In my free time, I like to work out, play video games, and roam around New York City. Once I fulfill my academic goals, I might start trying to work in game development or machine learning. 
       </p>
-    </section>
+    </motion.section>
   )
 }
