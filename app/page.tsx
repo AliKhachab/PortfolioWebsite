@@ -11,7 +11,7 @@ export default function Home() {
       <AboutMe />
       <SectionDivider />
       <Projects />
-      <p className="mb-8 font-black mt-8">Note that these projects are placeholders for me to put my actual real projects. These are just projects made by ByteGrad, the person who's tutorial I watched as reference for this website.</p> 
+      <p className="mb-8 font-black mt-8">Note that these projects are placeholders for me to put my actual real projects. These are projects made by ByteGrad, the person who's tutorial I watched as reference for this website.</p> 
       <SectionDivider />
     </main>
   )
