@@ -2,10 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function AboutMe() {
+  const { ref } = useSectionInView("About", 0.75);
+
+
   return (
-    <motion.section className="mb-3 sm:mb-8 max-w-[45rem] text-center leading-8 scroll-mt-28"
+    <motion.section 
+    ref={ref}
+    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll:mt-28"
     initial={{y:100, opacity:0}}
     animate={{y:0, opacity:1}}
     transition={{delay:0.175, type: "bounce"}}
@@ -19,4 +25,5 @@ export default function AboutMe() {
       </p>
     </motion.section>
   )
+  
 }
