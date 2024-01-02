@@ -7,7 +7,7 @@ import Project from './project';
 
 export default function Projects() {
   return (
-    <section className = "text-center justify-center items-center">
+    <section className = "text-center justify-center items-center scroll-mt-28" id="projects">
         <SectionHeading>My projects</SectionHeading>
         <div>
             { // note that these projects should be turned into mine soon, not the YouTuber's. this is just filler
