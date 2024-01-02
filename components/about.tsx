@@ -1,11 +1,25 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function AboutMe() {
+  const { ref, inView } = useInView({threshold:0.75});
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect( () => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
+
+
   return (
-    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
+    <motion.section 
+    ref={ref}
+    className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
     initial={{y:100, opacity:0}}
     animate={{y:0, opacity:1}}
     transition={{delay:0.175, type: "bounce"}}
@@ -19,4 +33,5 @@ export default function AboutMe() {
       </p>
     </motion.section>
   )
+  
 }
