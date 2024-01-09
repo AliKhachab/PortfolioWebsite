@@ -54,7 +54,7 @@ export default function Intro() {
         <Link href="#contact" className="bg-gray-900 px-7 py-3 text-white flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer"
         onClick={() => {
           setActiveSection("Contact");
-          setTimeOfLastClick(Date.now());
+          setTimeOfLastClick(Date.now()); // in the case of someone clicking the contact button jump to there
         }}>
           Contact me! <BsArrowRight className="group-hover:translate-x-1 opacity-70 transform" />{" "}
         </Link>
