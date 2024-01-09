@@ -8,9 +8,11 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs'; 
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home" ref={ref}>
@@ -49,7 +51,11 @@ export default function Intro() {
       <motion.div className = "flex justify-center items-center sm:flex-row flex-col gap-2 font-medium text-lg"
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}>
-        <Link href="#contact" className="bg-gray-900 px-7 py-3 text-white flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer">
+        <Link href="#contact" className="bg-gray-900 px-7 py-3 text-white flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer"
+        onClick={() => {
+          setActiveSection("Contact");
+          setTimeOfLastClick(Date.now());
+        }}>
           Contact me! <BsArrowRight className="group-hover:translate-x-1 opacity-70 transform" />{" "}
         </Link>
 
