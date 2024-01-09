@@ -5,8 +5,10 @@ const nextConfig = {
             hostname: 'media.licdn.com',
             protocol: "https",
         }]
-
-    }
+    },
+    experimental: {
+        serverActions: true,
+    },
 }
 
 module.exports = nextConfig
