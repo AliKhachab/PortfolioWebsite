@@ -1,21 +1,21 @@
-import React, { useEffect, useState, createContext } from "react";
+"use client";
 
-type Theme = "light" | "dark"
+import React, { useEffect, useState, createContext, useContext } from "react";
+
+type Theme = "light" | "dark";
 
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
 type ThemeContextType = {
-    theme: Theme;
-    toggleTheme: () => void;
-}
-
-type ThemeContextProps = {
-    children: React.ReactNode;
+  theme: Theme;
+  toggleTheme: () => void;
 };
 
-export default function ThemeContextProvider({
-    children
-}: ThemeContextProps) {
+type ThemeContextProps = {
+  children: React.ReactNode;
+};
+
+export default function ThemeContextProvider({ children }: ThemeContextProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
   const toggleTheme = () => {
@@ -43,10 +43,24 @@ export default function ThemeContextProvider({
       document.documentElement.classList.add("dark");
     }
   }, []);
-  return <ThemeContext.Provider value={{
-    theme,
-    toggleTheme
-  }}>
-    {children}
-  </ThemeContext.Provider>
+  return (
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (context === null) {
+    throw new Error("useTheme must be used within a ThemeContextProvider.");
+  }
+
+  return context;
 }
