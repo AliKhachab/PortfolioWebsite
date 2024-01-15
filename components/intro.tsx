@@ -58,13 +58,12 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <span className="font-bold">Microsoft please hire me.</span> I'm so
-        fucking poor{" "}
+        <span className="font-bold">Hi there! My name is Ali and I'm currently studying computer science at NYIT.</span> I'm currently learning how to do {" "}
         <span className="font-bold">
-          So many vacuums while I am on Fortnite...{" "}
+        fullstack development,{" "}
         </span>{" "}
-        4090 supercomputer in my brain I promise I'm internship worthy{" "}
-        <span className="font-bold">我饿死了 </span> Where Broly in Fortnite
+        currently focusing on frontend projects.{" "}
+        <span className="font-bold">Thanks for coming to my page! </span>
       </motion.h1>
       <motion.div
         className="flex justify-center items-center sm:flex-row flex-col gap-2 font-medium text-lg"
