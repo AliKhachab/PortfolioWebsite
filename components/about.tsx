@@ -26,5 +26,5 @@ export default function AboutMe() {
       </p>
     </motion.section>
   )
-  
+
 }
