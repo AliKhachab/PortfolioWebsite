@@ -9,6 +9,7 @@ import { BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import mypicture from "@/public/mypicture.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -28,7 +29,7 @@ export default function Intro() {
             transition={{ ease: "easeInOut", duration: 0.25 }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/D4E03AQFpZVUVMWqQ9A/profile-displayphoto-shrink_800_800/0/1696641139700?e=1709164800&v=beta&t=p6sQkr030FQfmizO7zWBivRCbSut0uUpJfdTJbkR8Os"
+              src={mypicture}
               alt="Portrait of Ali Khachab."
               width="192"
               height="192"
