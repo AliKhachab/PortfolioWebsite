@@ -60,9 +60,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hi there! My name is Ali and I'm currently studying computer science at NYIT.</span> I'm currently learning how to do {" "}
         <span className="font-bold">
-        fullstack development,{" "}
-        </span>{" "}
-        currently focusing on frontend projects.{" "}
+        fullstack development.{" "}
+        </span>
         <span className="font-bold">Thanks for coming to my page! </span>
       </motion.h1>
       <motion.div
