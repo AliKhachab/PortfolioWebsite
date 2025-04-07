@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import trekbagImg from "@/public/trekbag.png";
 
 export const links = [
   {
@@ -92,9 +93,16 @@ export const projectsData = [
     imageUrl: rmtdevImg,
   },
   {
+    title: "TrekBag",
+    description:
+      "A React website that allows users to keep track of a list of things they would need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
+    tags: ["HTML", "CSS", "JavaScript", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: trekbagImg,
+  },
+  {
     title: "Word Analytics",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["HTML", "CSS", "JavaScript"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
