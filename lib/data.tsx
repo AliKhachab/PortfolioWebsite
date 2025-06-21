@@ -6,6 +6,8 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import trekbagImg from "@/public/trekbag.png";
+import focusflow from "@/public/focusflow.png";
+import quizapp from "@/public/quizapp.png";
 
 export const links = [
   {
@@ -47,7 +49,7 @@ export const experiencesData = [
     title: "Senior year of college @ NYIT",
     location: "NYC, NY",
     description:
-      "I am currently in my senior year of college at NYIT studying for my B.S. in computer science, and I intend on pursuing a Master's degree. I graduate in Fall 2025. I am open to internships.",
+      "I am currently in my senior year of college at NYIT studying for my B.S. in computer science, and I intend on pursuing a Master's degree. I graduate in Fall 2025 but I intend on staying in school for another semester to prepare for the industry. I am open to internships.",
     icon: React.createElement(LuGraduationCap),
     date: "Fall 2022 - Fall 2025",
   },
@@ -79,6 +81,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "FocusFlow",
+    description:
+      "A ReactNative application task managing and Pomodoro timer app to help users focus. Uses Firebase for auth and data storage. ",
+    tags: ["ReactNative", "TypeScript", "CSS", "Firebase", "NoSQL", "Expo"], 
+    imageUrl: focusflow,
+  },
+  {
+    title: "Hustler",
+    description:
+      "Led front-end development and demod this hackathon web app project to help gig workers easily manage view all their funds from different banks in one place.",
+    tags: ["React", "TypeScript", "Auth0", "Vite", "D3js", "MongoDB"], 
+    imageUrl: corpcommentImg,
+  },
+    {
+    title: "Quiz App",
+    description: "A full-stack LAMP web app that allows you to take two quizzes and stores leaderboard data. Built for my Internet Programming class with team. Backend focus.",
+    tags: ["PHP", "HTML", "CSS", "MySQL"],
+    imageUrl: quizapp
+  },
+  {
     title: "CorpComment",
     description:
       "A front-end web application where users can give public feedback to companies. Filter through each company or write comments of your own, using a hashtag to write about the company of choice.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
@@ -95,7 +117,7 @@ export const projectsData = [
   {
     title: "TrekBag",
     description:
-      "A React website that allows users to keep track of a list of things they would need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
+      "A React web app that allows users to keep track of a list of things they need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
     tags: ["HTML", "CSS", "JavaScript", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: trekbagImg,
   },
@@ -129,24 +151,3 @@ export const skillsData = [
   "Python",
   "Framer Motion",
 ] as const;
-// export const skillsData = [
-//   "HTML",
-//   "CSS",
-//   "JavaScript",
-//   "TypeScript",
-//   "React",
-//   "Next.js",
-//   "Node.js",
-//   "Git",
-//   "Tailwind",
-//   "Prisma",
-//   "MongoDB",
-//   "Redux",
-//   "GraphQL",
-//   "Apollo",
-//   "Express",
-//   "PostgreSQL",
-//   "Python",
-//   "Django",
-//   "Framer Motion",
-// ] as const;
