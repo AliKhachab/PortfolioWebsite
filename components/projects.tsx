@@ -5,6 +5,7 @@ import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data'; 
 import Project from './project';
 import { useSectionInView } from '@/lib/hooks';
+import { Section } from '@react-email/components';
 
 
 
@@ -14,6 +15,7 @@ export default function Projects() {
   return (
     <section className = "mb-28 sm:mb-40 text-center justify-center items-center scroll-mt-28" id="projects" ref={ref}>
         <SectionHeading>My projects</SectionHeading>
+        <h3 className="text-xl font-medium capitalize mb-8 text-center">Click to be redirected to the GitHub repository</h3>
         <div>
             { // note that these projects should be turned into mine soon, not the YouTuber's. this is just filler
             projectsData.map((project, index) => (
