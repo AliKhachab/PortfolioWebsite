@@ -8,6 +8,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import trekbagImg from "@/public/trekbag.png";
 import focusflow from "@/public/focusflow.png";
 import quizapp from "@/public/quizapp.png";
+import hustler from "@/public/hustler.png";
 
 export const links = [
   {
@@ -86,19 +87,22 @@ export const projectsData = [
       "A ReactNative application task managing and Pomodoro timer app to help users focus. Uses Firebase for auth and data storage. ",
     tags: ["ReactNative", "TypeScript", "CSS", "Firebase", "NoSQL", "Expo"], 
     imageUrl: focusflow,
+    link: "https://github.com/Jasonl145/FocusFlow_v1.0"
   },
   {
     title: "Hustler",
     description:
       "Led front-end development and demod this hackathon web app project to help gig workers easily manage view all their funds from different banks in one place.",
     tags: ["React", "TypeScript", "Auth0", "Vite", "D3js", "MongoDB"], 
-    imageUrl: corpcommentImg,
+    imageUrl: hustler,
+    link: "https://github.com/khamseaffan/Hustler_Hackathon"
   },
     {
     title: "Quiz App",
     description: "A full-stack LAMP web app that allows you to take two quizzes and stores leaderboard data. Built for my Internet Programming class with team. Backend focus.",
     tags: ["PHP", "HTML", "CSS", "MySQL"],
-    imageUrl: quizapp
+    imageUrl: quizapp,
+    link: "https://github.com/AliKhachab/ITEC305QuizWebsite"
   },
   {
     title: "CorpComment",
@@ -106,6 +110,7 @@ export const projectsData = [
       "A front-end web application where users can give public feedback to companies. Filter through each company or write comments of your own, using a hashtag to write about the company of choice.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["HTML", "CSS", "JavaScript"], // ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
+    link: "https://github.com/AliKhachab/CorpComment"
   },
   {
     title: "rmtDev",
@@ -113,6 +118,7 @@ export const projectsData = [
       "A job website front-end focused application built for remote developers. Filter, sort, and paginate through companies seamlessly.",//"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["HTML", "CSS", "JavaScript", "NodeJS"], //["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    link: "https://github.com/AliKhachab/rmtDev"
   },
   {
     title: "TrekBag",
@@ -120,13 +126,15 @@ export const projectsData = [
       "A React web app that allows users to keep track of a list of things they need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
     tags: ["HTML", "CSS", "JavaScript", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: trekbagImg,
+    link: "https://github.com/AliKhachab/TrekBag"
   },
   {
     title: "Word Analytics",
     description:
-      "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A web app for quick analytics on text. It shows word count, character count and social media post limits. Made a version with React and with vanilla JS.",
     tags: ["HTML", "CSS", "JavaScript"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    link: "https://github.com/AliKhachab/ReactWordAnalytics"
   },
 ] as const;
 
