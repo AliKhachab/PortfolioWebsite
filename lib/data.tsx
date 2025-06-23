@@ -110,7 +110,7 @@ export const projectsData = [
       "A front-end web application where users can give public feedback to companies. Filter through each company or write comments of your own, using a hashtag to write about the company of choice.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["HTML", "CSS", "JavaScript"], // ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
-    link: "https://github.com/AliKhachab/CorpComment"
+    link: "https://alikhachab.github.io/CorpComment/"
   },
   {
     title: "rmtDev",
