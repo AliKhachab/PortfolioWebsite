@@ -84,8 +84,8 @@ export const projectsData = [
   {
     title: "FocusFlow",
     description:
-      "A ReactNative application task managing and Pomodoro timer app to help users focus. Uses Firebase for auth and data storage. ",
-    tags: ["ReactNative", "TypeScript", "CSS", "Firebase", "NoSQL", "Expo"], 
+      "A ReactNative app for task managing and Pomodoro timer app to help users focus, with Firebase for auth and data storage. Demo video in README on GitHub.",
+    tags: ["ReactNative", "TypeScript", "CSS", "Firebase", "Expo"], 
     imageUrl: focusflow,
     link: "https://github.com/Jasonl145/FocusFlow_v1.0"
   },
@@ -99,7 +99,7 @@ export const projectsData = [
   },
     {
     title: "Quiz App",
-    description: "A full-stack LAMP web app that allows you to take two quizzes and stores leaderboard data. Built for my Internet Programming class with team. Backend focus.",
+    description: "Led a team of 3 to build a full-stack quiz app for a class project. My focus was back-end development with PHP and MySQL. Demo video in README on GitHub.",
     tags: ["PHP", "HTML", "CSS", "MySQL"],
     imageUrl: quizapp,
     link: "https://github.com/AliKhachab/ITEC305QuizWebsite"
@@ -108,15 +108,15 @@ export const projectsData = [
     title: "CorpComment",
     description:
       "A front-end web application where users can give public feedback to companies. Filter through each company or write comments of your own, using a hashtag to write about the company of choice.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["HTML", "CSS", "JavaScript"], // ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["HTML", "CSS", "JavaScript", "NodeJS"], // ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
     link: "https://alikhachab.github.io/CorpComment/"
   },
   {
     title: "rmtDev",
     description:
-      "A job website front-end focused application built for remote developers. Filter, sort, and paginate through companies seamlessly.",//"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["HTML", "CSS", "JavaScript", "NodeJS"], //["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A job website front-end focused application built to simulate an online job board. Paginate, filter, and sort easily.",
+    tags: ["HTML", "CSS", "JavaScript", "NodeJS"],
     imageUrl: rmtdevImg,
     link: "https://github.com/AliKhachab/rmtDev"
   },
@@ -124,7 +124,7 @@ export const projectsData = [
     title: "TrekBag",
     description:
       "A React web app that allows users to keep track of a list of things they need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
-    tags: ["HTML", "CSS", "JavaScript", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["HTML", "CSS", "JavaScript", "React", "NodeJS"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: trekbagImg,
     link: "https://alikhachab.github.io/TrekBag/"
   },
@@ -132,7 +132,7 @@ export const projectsData = [
     title: "Word Analytics",
     description:
       "A web app for quick analytics on text. It shows word count, character count and social media post limits. Made a version with React and with vanilla JS.",
-    tags: ["HTML", "CSS", "JavaScript"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["HTML", "CSS", "JavaScript", "NodeJS"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
     link: "https://github.com/AliKhachab/ReactWordAnalytics"
   },
