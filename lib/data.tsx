@@ -126,7 +126,7 @@ export const projectsData = [
       "A React web app that allows users to keep track of a list of things they need to go on a trip. Add any items you need, mark them as packed, and sort or delete them.",
     tags: ["HTML", "CSS", "JavaScript", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: trekbagImg,
-    link: "https://github.com/AliKhachab/TrekBag"
+    link: "https://alikhachab.github.io/TrekBag/"
   },
   {
     title: "Word Analytics",
