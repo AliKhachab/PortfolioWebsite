@@ -19,7 +19,7 @@ export default function AboutMe() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className = "mb-3">
-        I'm currently doing my senior year in <span className="font-bold">computer science</span> at NYIT to purue my passion for programming. I have many things I would like to learn, but right now I am focusing on <span className="font-bold">full-stack software development.</span> In my free time, I like to exercise, play video games, and explore New York City. I also enjoy learning new things, and I'm always looking for ways to improve my skills and knowledge. I also am interested in <span className="font-bold">game development and AI.</span> 
+        I'm a <span className="font-bold">senior student</span> pursuing my bachelor's degree in <span className="font-bold">Computer Science</span> at the New York Institute of Technology (NYIT). I'm currently focusing on mastering <span className="font-bold">full-stack development</span> while exploring emerging technologies. I'm particularly fascinated by <span className="font-bold">artificial intelligence</span> and <span className="font-bold">game development</span>, areas where creativity meets technical problem-solving. When I'm not coding, you can find me in New York City, staying active through exercise, or playing video games.
       </p>
     </motion.section>
   )

@@ -107,7 +107,7 @@ export const projectsData = [
   {
     title: "CorpComment",
     description:
-      "A front-end web application where users can give public feedback to companies. Filter through each company or write comments of your own, using a hashtag to write about the company of choice.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "A front-end web app where users can give public feedback to companies. Filter through companies or talk about one with a hashtag.",// "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["HTML", "CSS", "JavaScript", "NodeJS"], // ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
     link: "https://alikhachab.github.io/CorpComment/"
@@ -131,8 +131,8 @@ export const projectsData = [
   {
     title: "Word Analytics",
     description:
-      "A web app for quick analytics on text. It shows word count, character count and social media post limits. Made a version with React and with vanilla JS.",
-    tags: ["HTML", "CSS", "JavaScript", "NodeJS"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["HTML", "CSS", "JavaScript", "NodeJS", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
     link: "https://github.com/AliKhachab/ReactWordAnalytics"
   },
