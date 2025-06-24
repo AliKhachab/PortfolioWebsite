@@ -134,7 +134,7 @@ export const projectsData = [
       "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["HTML", "CSS", "JavaScript", "NodeJS", "React"],//["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
-    link: "https://github.com/AliKhachab/ReactWordAnalytics"
+    link: "https://alikhachab.github.io/ReactWordAnalytics/"
   },
 ] as const;
 
