@@ -83,7 +83,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/Ali_Khachab_Downloadable_Résumé.pdf"
+          href="/Ali Khachab Resume.pdf"
           className="bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition-all group outline-none cursor-pointer borderBlack dark:bg-white/15"
           download
         >
