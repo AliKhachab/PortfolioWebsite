@@ -10,6 +10,7 @@ import focusflow from "@/public/focusflow.png";
 import quizapp from "@/public/quizapp.png";
 import hustler from "@/public/hustler.png";
 import blackjack from "@/public/blackjack.png";
+import { link } from "fs";
 
 export const links = [
   {
@@ -82,6 +83,26 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  // {
+  //   title: "Aimr",
+  //   description: "Collaborating Roblox multiplayer arena shooter.",
+  //   tags: ["Lua", "RobloxStudio", "Work In Progress"],
+  //   link: null,
+  //   imageUrl: null
+  // },
+  // {
+  //   title: "NYIT Click Senior Project",
+  //   description: "An AI-powered web application to generate the best possible schedule for college students based on their needs.",
+  //   tags: ["NextJS", "React", "TypeScript", "Supabase"]
+  // },
+  {
+    title: "Blackjack 2D Game",
+    description:
+      "A 2D Blackjack game built with Godot, built modularly using scene-based architecture for reusable systems.",
+    tags: ["Godot", "GDScript"], 
+    imageUrl: blackjack,
+    link: "https://github.com/AliKhachab/GodotBlackjack"
+  },
   {
     title: "FocusFlow",
     description:
@@ -89,14 +110,6 @@ export const projectsData = [
     tags: ["ReactNative", "TypeScript", "CSS", "Firebase", "Expo"], 
     imageUrl: focusflow,
     link: "https://github.com/Jasonl145/FocusFlow_v1.0"
-  },
-    {
-    title: "Blackjack 2D Game",
-    description:
-      "A 2D Blackjack game built with Godot.  Currently a work in progress and repository is private.",
-    tags: ["Godot", "GDScript", "Work in Progress"], 
-    imageUrl: blackjack,
-    link: "https://github.com/AliKhachab/GodotBlackjack"
   },
   {
     title: "Hustler",
@@ -167,4 +180,10 @@ export const skillsData = [
   "PHP",
   "Python",
   "Framer Motion",
+  "Lua",
+  "Unreal Engine",
+  "C++",
+  "Roblox Studio",
+  "Godot",
+  "GDScript",
 ] as const;
